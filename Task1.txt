@@ -1,0 +1,21 @@
+# Git Conflict Resolution Documentation
+
+## 1. Environment Setup
+- Initialized a local Git repository.
+- Created an initial `README.md` file on the `main` branch.
+
+## 2. Branching and Conflict Creation
+- Created a separate branch named `feature-abc`.
+- Appended text to line 2 of `README.md` on `feature-abc` and committed.
+- Switched back to `main`, appended different text to line 2 of `README.md`, and committed.
+
+## 3. Merge Conflict Triggered
+- Ran command: `git merge feature-abc`
+- Received conflict error on `README.md`.
+
+## 4. Resolution Steps
+- Opened `README.md` to locate Git conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
+- Decided to manually combine the conflicting text lines.
+- Removed markers and saved the file.
+- Ran `git add README.md` and `git commit` to successfully finalize the merge.
+
