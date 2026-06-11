@@ -19,3 +19,12 @@
 - Removed markers and saved the file.
 - Ran `git add README.md` and `git commit` to successfully finalize the merge.
 
+$ git log --oneline --graph --all
+* 3799f44 (HEAD -> master, origin/master) final
+*   f2569d2 Fix merge conflict between master and feature-abc
+|\
+| * 89f5b7a (feature-abc) Feature branch commit: Added feature details
+* | b9fe5bd Main branch commit: Updated main documentation
+|/
+* b76dd95 Initial commit: Set up repository with README
+* 4b23bdf git-Task1
